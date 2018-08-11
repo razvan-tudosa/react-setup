@@ -14,7 +14,7 @@ class Example extends Component {
     const { allGood } = this.props
     return (
       <Wrapper>
-        All good?
+        <Title>All good?</Title>
         {
           allGood
             ? <Yup>Ja, man! 👍</Yup>
@@ -25,7 +25,16 @@ class Example extends Component {
   }
 }
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+`
+const Title = styled.h1`
+  color: #222;
+`
 const Yup = styled.div``
 const Nope = styled.div``
 
